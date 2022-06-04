@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">I.T.S.</string>
+    <string name="catalog">Главная</string>
+    <string name="contacts_text">Контакты</string>
+    <string name="main_text">Главная</string>
+    <string name="order_text">Корзина</string>
+    <string name="filter">filter</string>
+    <string name="pruduct_price">Цена:</string>
+    <string name="product_description">Описание:</string>
+    <string name="product_url">Описание:</string>
+    <string name="order">Заказать услугу</string>
+    <string name="buy">Купить проект</string>
+    <string name="login_form_title">Войти</string>
+    <string name="login_form_email">Почта</string>
+    <string name="login_form_username">Имя</string>
+    <string name="login_form_password">Пароль</string>
+    <string name="login_form_login">Начать</string>
+    <string name="register_form_title">Регистриция</string>
+    <string name="register_form_login">Начать</string>
+</resources>

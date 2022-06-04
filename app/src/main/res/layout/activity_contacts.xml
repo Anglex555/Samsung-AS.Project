@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".СontactsActivity">
+
+    <TextView
+        android:id="@+id/Catalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="Контакты"
+        android:textColor="@color/theme"
+        android:textSize="38sp"
+        app:layoutDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/whatsapp_button"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_whatsapp"
+        android:onClick="openWhatsApp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Мы в WhatsApp"
+        app:backgroundTint="#43d854"
+        app:cornerRadius="30dp"
+        app:iconSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/Catalog" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/vk_button"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_vk_com_logo"
+        android:onClick="openVK"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Мы в ВКонтакте"
+        app:backgroundTint="#0d7bef"
+        app:cornerRadius="30dp"
+        app:iconSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp_button" />
+
+    <TextView
+        android:id="@+id/catalog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="Задать вопрос"
+        android:textColor="@color/theme"
+        android:textSize="24sp"
+        app:layoutDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/vk_button" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/catalog2"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваша почта:*" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваше имя:*" />
+
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваш вопрос:*" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="4" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="clickSendEmail"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Отправить сообщение"
+        app:backgroundTint="#FC5130"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/main"
+        android:onClick="openMenu"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:background="@color/main_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="120dp"
+            android:layout_height="115dp"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:onClick="openMain"
+            android:text="@string/main_text"
+            android:textColor="@color/main"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="120dp"
+            android:layout_height="115dp"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:onClick="openOrder"
+            android:text="@string/order_text"
+            android:textColor="@color/main"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contacts"
+            android:layout_width="120dp"
+            android:layout_height="115dp"
+            android:fontFamily="@font/amiko_bold"
+            android:gravity="center"
+            android:text="@string/contacts_text"
+            android:textColor="@color/main"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.702" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

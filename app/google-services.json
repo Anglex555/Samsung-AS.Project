@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29473485279",
+    "project_id": "itshop-1bc70",
+    "storage_bucket": "itshop-1bc70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29473485279:android:30ca40d50f61996cbd946a",
+        "android_client_info": {
+          "package_name": "com.anglex.shop_online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29473485279-2mmv7qdjenoa3fdhlsv198dt7t7c6iqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfYq7KwtrFdFhPJVvibXtWcKZJQbqcuJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29473485279-2mmv7qdjenoa3fdhlsv198dt7t7c6iqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
